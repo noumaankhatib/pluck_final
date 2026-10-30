@@ -6,6 +6,8 @@ const bodoni = Bodoni_Moda({
   subsets: ["latin"],
   variable: "--font-bodoni",
   display: "swap",
+  // Load the real italic cut too (used by the case-study hero accent); avoids faux-slanted upright.
+  style: ["normal", "italic"],
 });
 
 const montserrat = Montserrat({
